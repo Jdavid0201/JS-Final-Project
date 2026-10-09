@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #01044b;
+    color: white;
+}
+
+
+/* HERO */
+
+.hero {
+    flex-direction: column;
+    padding: 50px 10%;
+}
+
+
+/* NAVIGATION */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: #ee5b07;
+    color: white;
+    font-weight: 700;
+    border-radius: 90%;
+    margin-right: 10px;
+}
+
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav__links a:hover {
+    color: #ee5b07;
+}
+
+.nav__button {
+    background-color: #ee5b07;
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+
+/* HERO CONTENT */
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.hero__content h1 {
+    font-size: 52px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ee5b07;
+}
+
+.hero__content p {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* SEARCH BAR */
+
+.search {
+    display: flex;
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 40px;
+    padding: 6px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.search button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ee5b07;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* RESULTS */
+
+.results {
+    min-height: 350px;
+    padding: 50px 10%;
+    background-color: #01044b;
+}
+
+.results h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #ee5b07;
+}
+
+.results__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

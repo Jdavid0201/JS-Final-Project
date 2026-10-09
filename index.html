@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+   
+    <header class="hero">
+        <nav class="nav">
+            <div class="logo">
+                <span>MF</span>
+                MovieFinder
+            </div>
+            <div class="nav__links">
+                <a href="#">Home</a>
+                <a href="#">Find a Movie</a>
+                <a href="#" class="nav__button">Contact</a>
+            </div>
+        </nav>
+        <div class="hero__content">
+            <h1>Find your next movie</h1>
+            <p>Discover movies you'll love.</p>
+            <div class="search">
+                <input
+                    type="text"
+                    placeholder="Search by name..."
+                    onchange="onSearchChange(event)"
+                />
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+    <main class="results">
+        <h2>Search Results</h2>
+        <div class="results__container">
+            <!-- Movies will eventually go here -->
+        </div>
+
+    </main>
+</body>
+</html>
