@@ -133,7 +133,7 @@ body {
 
 .results {
     min-height: 350px;
-    padding: 50px 30%;
+    padding: 50px 30px;
     background-color: #01044b;
     display: flex;
     flex-wrap: wrap;
@@ -147,9 +147,10 @@ body {
 
 .results__container {
     display: flex;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: center;
     gap: 24px;
     padding: 0 40px;
+    flex-wrap: wrap;
 }
 
 
