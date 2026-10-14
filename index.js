@@ -1,9 +1,11 @@
 const moviesWrapper = document.querySelector(".results__container");
+const nameWrapper = document.querySelector(".search input");
 
 async function getMovies(searchTerm) {
     const response = await fetch(
         `http://www.omdbapi.com/?apikey=5f8a59f3&s=${searchTerm}`
     );
+    nameWrapper.innerHTML = searchTerm;
     const data = await response.json();
     console.log(data.Search);
     moviesWrapper.innerHTML = data.Search.map((movie) => {
@@ -15,7 +17,9 @@ async function getMovies(searchTerm) {
                 <button>Learn More</button>
             </div>
         `;
-    }).join("");
+    })
+    .slice(0, 6)
+    .join("");
 }
 
 function onSearchChange(event) {
