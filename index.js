@@ -3,7 +3,7 @@ const nameWrapper = document.querySelector(".search input");
 
 async function getMovies(searchTerm) {
     const response = await fetch(
-        `http://www.omdbapi.com/?apikey=5f8a59f3&s=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=5f8a59f3&s=${searchTerm}`
     );
     nameWrapper.innerHTML = searchTerm;
     const data = await response.json();
